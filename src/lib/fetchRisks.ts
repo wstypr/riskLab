@@ -18,7 +18,7 @@ export default async function fetchRisks({
         content: [
           {
             type: "text",
-            text: `anda adalah ahli manajemen risiko pemerintahan. anda akan diberikan nama perangkat daerah, nama program dan indikator keberhasilannya dan proses bisnisnya. identifikasi risiko-risiko terkait program tersebut.Lakukan identifikasi risiko meliputi risiko yang disebabkan man, method, machine, medium, money. Lakukan identifikasi juga terhadap risiko fraud.\nperangkat daerah: ${perangkatDaerah}\nprogram: ${program}\nproses bisnis: ${bussinessProcess}\n\nCRITICAL:\npernyataan risiko harus berupa satu kalimat ringkas dan tidak mengandung dampak/akibat dan tidak mengandung sebab.\n\nCRITICAL:\nLakukan identifikasi risiko sebanyak-banyaknya.Setiap risiko harus berkualitas dan jelas. Minimal 30 risiko.\n\nCRITICAL:\nRespond in Bahasa Indonesia.`,
+            text: `anda adalah ahli manajemen risiko pemerintahan. anda akan diberikan nama perangkat daerah, nama program dan indikator keberhasilannya dan proses bisnisnya. identifikasi risiko-risiko terkait program tersebut. Lakukan juga identifikasi risiko terhadap risiko fraud.\nperangkat daerah: ${perangkatDaerah}\nprogram: ${program}\nproses bisnis: ${bussinessProcess}\n\nCRITICAL:\npernyataan risiko harus berupa satu kalimat ringkas dan tidak mengandung dampak/akibat dan tidak mengandung sebab.\n\nCRITICAL:\nLakukan identifikasi risiko sebanyak-banyaknya.Setiap risiko harus berkualitas dan jelas. Minimal 30 risiko.\n\nCRITICAL:\nRespond in Bahasa Indonesia.`,
           },
         ],
       },
