@@ -10,7 +10,13 @@ interface RiskDetailModalProps {
   probabilityScore: number;
 }
 
-export default function RiskDetailModal({riskDetail, onClick}: {riskDetail: RiskDetailModalProps, onClick: () => void}) {
+export default function RiskDetailModal({
+  riskDetail,
+  onClick,
+}: {
+  riskDetail: RiskDetailModalProps;
+  onClick: () => void;
+}) {
   const {
     risk,
     cause,
@@ -22,9 +28,9 @@ export default function RiskDetailModal({riskDetail, onClick}: {riskDetail: Risk
   } = riskDetail;
 
   return (
-    <div className="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity">
-      <div className="w-screen h-screen flex items-center justify-center">
-        <div className="relative max-w-lg transforom overflow-hidden rounded-lg bg-white shadow-xl transition-all p-8  ">
+    <div className="fixed inset-0 min-w-screen h-full overflow-auto bg-gray-500 bg-opacity-75 transition-opacity">
+      <div className="min-w-screen h-full flex items-center justify-center my-8">
+        <div className="relative max-w-lg max-h-fit transform  rounded-lg bg-white shadow-xl transition-all p-8  m-4">
           <div className="mb-4">
             <h3 className=" font-medium text-gray-900">Risiko:</h3>
             <p>{risk}</p>
@@ -54,13 +60,12 @@ export default function RiskDetailModal({riskDetail, onClick}: {riskDetail: Risk
             <p>{probabilityScore}</p>
           </div>
           <div className="flex justify-end">
-          <Button variant="destructive" onClick={onClick}>
-            Tutup
-          </Button>
+            <Button variant="destructive" onClick={onClick}>
+              Tutup
+            </Button>
           </div>
         </div>
       </div>
     </div>
   );
 }
-
