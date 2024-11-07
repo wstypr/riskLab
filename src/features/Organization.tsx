@@ -59,7 +59,7 @@ export default function Organization() {
         />
         <Textarea
           className="mb-6"
-          placeholder="Kegiatan"
+          placeholder="Kegiatan/Subkegiatan Yang Mendefinisikan Indikator Program"
           rows={8}
           name="kegiatan"
           required
