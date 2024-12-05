@@ -31,6 +31,9 @@ export default function RiskDetailModal({
     <div className="fixed inset-0 min-w-screen h-full overflow-auto bg-gray-500 bg-opacity-75 transition-opacity">
       <div className="min-w-screen h-full flex items-center justify-center my-8">
         <div className="relative max-w-lg max-h-fit transform  rounded-lg bg-white shadow-xl transition-all p-8  m-4">
+          <h4 className="text-lg font-bold text-gray-900 mb-4">
+            Rekomendasi AI
+          </h4>
           <div className="mb-4">
             <h3 className=" font-medium text-gray-900">Risiko:</h3>
             <p>{risk}</p>
